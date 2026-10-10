@@ -1,5 +1,5 @@
 import googlePlayimg from "../../assets/googlePlayBadge.svg";
-import appStoreimg from "../../assets/appStoreBadge.svg";
+import appStoreimg from "../../assets/appstoreBadge.svg";
 
 
 export default function LeftImageSection({imageUrl,productName,productDescription,tryDemo,learnMore,googlePlay,appStore}) {
