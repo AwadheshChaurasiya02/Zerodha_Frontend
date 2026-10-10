@@ -13,7 +13,7 @@ export default function Login() {
 
   const login = async() =>{
     try{
-    const response = await axios.post("http://localhost:3002/login",form,{ withCredentials : true });
+    const response = await axios.post("https://zerodha-backend-0nbv.onrender.com/login",form,{ withCredentials : true });
 
     if(response.data.success){
 
@@ -22,7 +22,7 @@ export default function Login() {
       password : ""
       });
 
-      window.location.href = "http://localhost:5174/";
+      window.location.href = "https://zerodha-dashboard-n7l0.onrender.com";
     }
     }
   catch(err){

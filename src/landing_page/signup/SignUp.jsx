@@ -16,7 +16,7 @@ export default function SignUp() {
    
   const signup = async() =>{
     try{ 
-    const response = await axios.post("http://localhost:3002/signup",form,{ withCredentials : true });
+    const response = await axios.post("https://zerodha-backend-0nbv.onrender.com/signup",form,{ withCredentials : true });
 
     if(response.data.success){
         setForm({
@@ -25,7 +25,7 @@ export default function SignUp() {
           password : ""
         });
         setSuccessMsg(response.data.message);
-      window.location.href = "http://localhost:5174/";
+      window.location.href = "https://zerodha-dashboard-n7l0.onrender.com";
     }
 
     }
