@@ -51,6 +51,7 @@ export default function Navbar() {
           </div>
 
           <ul id="mobile-menu" ref={mobile}>
+            <Link to="/login">Login</Link>
             <Link to="/signup">Signup</Link >
             <Link to="/about">About</Link >
             <Link to="/products">Products</Link >
